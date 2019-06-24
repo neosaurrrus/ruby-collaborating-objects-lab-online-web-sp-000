@@ -1,6 +1,7 @@
 class Song
 attr_accessor :name, :new_by_filename, :artist
 
+  @all = []
   def self.all
     @@all
   end
