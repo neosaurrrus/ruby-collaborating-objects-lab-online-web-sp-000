@@ -13,7 +13,7 @@ attr_accessor :name, :new_by_filename, :artist
     song_name = split_name[1].strip
     artist_name = split_name[0].strip
 
-    if @@all.find{ |song| song.name == name}
+    if !@@all.find{ |song| song.name == name}
       new_Song = Song.new(song_name)
       @all << new_song
       new_Song.artist = Artist.find_or_create_by_name(artist_name)
