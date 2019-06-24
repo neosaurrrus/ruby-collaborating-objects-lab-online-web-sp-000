@@ -12,6 +12,7 @@ attr_accessor :name, :new_by_filename, :artist
     artist_name = split_name[0].strip
     new_Song = Song.new(song_name)
     new_Song.artist = Artist.find_or_create_by_name(artist_name)
+    puts Artist.all
     # new_Song.name = sog
     # puts new_Song.name
     new_Song
