@@ -25,7 +25,7 @@ attr_accessor :name, :new_by_filename, :artist
 
     # new_Song.name = sog
     # puts new_Song.name
-    new_Song
+    new_song
   end
 
 
