@@ -26,7 +26,7 @@ attr_accessor :name, :all, :find_or_create_by_name
   def self.find_or_create_by_name(name)
     puts @@all
     if @@all.find{ |artist| artist.name == name}
-      return
+      puts "Artist found"
     else
       new_artist = self.new(name)
       @@all << new_artist
