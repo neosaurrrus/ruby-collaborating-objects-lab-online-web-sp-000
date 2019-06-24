@@ -13,7 +13,7 @@ attr_accessor :name, :new_by_filename, :artist
     new_Song = Song.new(song_name)
     new_Song.artist = Artist.find_or_create_by_name(artist_name)
     puts Artist.all.length
-    
+
     # new_Song.name = sog
     # puts new_Song.name
     new_Song
