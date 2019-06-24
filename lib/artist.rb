@@ -30,6 +30,7 @@ attr_accessor :name, :all, :find_or_create_by_name
     else
       new_artist = self.new(name)
       @@all << new_artist
+      puts "Created:#{name}"
       new_artist
     end # conditional
   end # find or create.
